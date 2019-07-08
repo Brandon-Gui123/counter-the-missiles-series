@@ -16,12 +16,16 @@ public class ScorePopup : MonoBehaviour {
     public float maxFontSize = 16;
     public float fontSizeIncrement = 0.2f;
 
+    public int startColourChange = 20;
+    public int maxColourChange = 200;
+
     // Start is called before the first frame update
     private void Start() {
         scorePopupAnimator.SetFloat("timeBeforeDisappearingFreq", 1 / timeBeforeDisappearing);
         scorePopupAnimator.SetFloat("shrinkSpeed", shrinkSpeed);
 
         scorePopupAnimator.SetTrigger("popupScore");
+        scorePopupAnimator.SetLayerWeight(1, 0f);
 
         scoreTextMesh.text = score.ToString();
     }
@@ -45,5 +49,9 @@ public class ScorePopup : MonoBehaviour {
         scoreTextMesh.text = score.ToString();
 
         scoreTextMesh.fontSize = Mathf.Clamp(scoreTextMesh.fontSize + fontSizeIncrement, 12, maxFontSize);
+
+        if (score >= startColourChange) {
+            scorePopupAnimator.SetLayerWeight(1, (float) score / maxColourChange);
+        }
     }
 }
