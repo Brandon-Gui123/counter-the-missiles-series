@@ -343,7 +343,7 @@ public class MissileLauncher : MonoBehaviour {
 
 #if UNITY_ANDROID
 //preprocessor directives for compiling to just Android
-                    if (isVibrationSupported) {
+                    if (isVibrationSupported && PlayerPreferences.preferences.GetUseVibration()) {
                         Handheld.Vibrate();
                     }
 
@@ -449,7 +449,7 @@ public class MissileLauncher : MonoBehaviour {
 
         //this is the distance for x-coordinates
         float horizontalDistance = target.x - origin.x;
-
+        
         //this is the distance for y-coordinates
         float verticalDistance = target.y - origin.y;
 

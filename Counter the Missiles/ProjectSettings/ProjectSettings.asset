@@ -246,7 +246,8 @@ PlayerSettings:
   AndroidTargetArchitectures: 5
   AndroidSplashScreenScale: 0
   androidSplashScreen: {fileID: 0}
-  AndroidKeystoreName: C:/Users/acer/Documents/MGDE Unity Projects/Counter the Missiles/user.keystore
+  AndroidKeystoreName: C:/Users/acer/Documents/Git Repositories/counter-the-missiles-unity3d-game/Counter
+    the Missiles/user.keystore
   AndroidKeyaliasName: brandon-key
   AndroidBuildApkPerCpuArchitecture: 0
   AndroidTVCompatibility: 0
@@ -720,7 +721,7 @@ PlayerSettings:
       daydreamIconForeground: {fileID: 0}
       daydreamIconBackground: {fileID: 0}
   cloudServicesEnabled:
-    Collab: 1
+    Collab: 0
     UNet: 1
   luminIcon:
     m_Name: 

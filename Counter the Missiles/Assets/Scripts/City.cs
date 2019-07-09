@@ -38,7 +38,7 @@ public class City : MonoBehaviour {
 
 #if UNITY_ANDROID
 //preprocessor directive used for compiling to just Android devices
-                    if (isVibrationSupported) {
+                    if (isVibrationSupported && PlayerPreferences.preferences.GetUseVibration()) {
                         Handheld.Vibrate();
                     }
 
