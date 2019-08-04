@@ -141,7 +141,8 @@ MonoBehaviour:
   comboTracker: {fileID: 0}
   minPitch: 0.7
   maxPitch: 1.2
-  audioSource: {fileID: 1409193202050957078}
+  explosionAudioSource: {fileID: 1409193202050957078}
+  explosionAudioClip: {fileID: 8300000, guid: 9fd89aaa41fd40e4c9ac08cea2abe092, type: 3}
   explosionParentName: Explosions Active
 --- !u!82 &1409193202050957078
 AudioSource:
@@ -153,7 +154,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9fd89aaa41fd40e4c9ac08cea2abe092, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 0.7
   m_Pitch: 1

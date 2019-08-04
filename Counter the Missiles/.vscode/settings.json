@@ -1,5 +1,4 @@
 {
-    "csharp.format.enable": false,
     "files.exclude": {
         "**/.git": true,
         "**/.svn": true,

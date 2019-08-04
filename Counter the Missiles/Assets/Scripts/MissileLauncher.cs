@@ -484,8 +484,8 @@ public class MissileLauncher : MonoBehaviour {
         //reduce ammo by one
         currentAmmoCount--;
 
-        //play audio
-        audioSource.Play();
+        //play a one-shot audio that does not get clipped by other audio clips
+        audioSource.PlayOneShot(audioSource.clip);
     }
 
     /// <summary>

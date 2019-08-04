@@ -13,9 +13,9 @@ public class Explosion : MonoBehaviour {
     /// </summary>
     [HideInInspector]
     public bool causedByPlayer = false;
-
-    #region Explosion Animation - details for animation speed
     
+    #region Explosion Animation - details for animation speed
+
     /// <summary>
     /// The possible states of an explosion.
     /// </summary>
@@ -71,7 +71,8 @@ public class Explosion : MonoBehaviour {
     [Range(0, 2)]
     public float maxPitch = 1.2f;
 
-    public AudioSource audioSource;
+    public AudioSource explosionAudioSource;
+    public AudioClip explosionAudioClip;
 
     #endregion
 
@@ -98,7 +99,9 @@ public class Explosion : MonoBehaviour {
         //randomize a pitch
         float playbackPitch = Random.Range(minPitch, maxPitch);
 
-        audioSource.pitch = playbackPitch;
+        //play audio at the explosion's position
+        explosionAudioSource.pitch = playbackPitch;
+        explosionAudioSource.PlayOneShot(explosionAudioClip, 0.8f);
     }
 
     // Update is called once per frame
