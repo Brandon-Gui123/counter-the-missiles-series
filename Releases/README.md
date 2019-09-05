@@ -42,9 +42,11 @@ This game does not utilize such inputs. So please ignore that.
 ---
 
 ## macOS users
-Click on the file named "Counter the Missiles (macOS).app" and then click "Download", which appears near the right.
+Click on the file named "Counter the Missiles (macOS).zip" and then click "Download", which appears near the right.
 
-Once downloaded, simply left-click on the downloaded file. This will launch the game.
+Once downloaded, simply left-click on the downloaded file. This will unzip the game and present a standalone file.
+
+Clicking the standalone file launches the game.
 
 You may see the following window when launching the game:
 
