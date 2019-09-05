@@ -16,7 +16,7 @@ Because this file is an executable file (.exe), anti-virus programs may mark thi
 
 Upon launching the file, you may see this:
 
-![Play Window on Windows](Play_Window_Windows.png)
+![Play Window on Windows](Play_Window_Windows.PNG)
 
 You can leave the settings as it is and just hit the "Play!" button on the lower right corner.
 
