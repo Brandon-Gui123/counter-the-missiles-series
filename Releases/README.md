@@ -19,7 +19,7 @@ Once downloaded, simply left-click on the downloaded file. This will launch the 
 
 You may see the following window when launching the game:
 
-![Play Window on macOS](Play_Window_macOS.png)
+<img src="Play_Window_macOS.png" style="width:70%;"></img>
 
 You can leave the settings at default and simply hit on "Play!" (on the bottom-right corner of the window) to start playing the game.
 
